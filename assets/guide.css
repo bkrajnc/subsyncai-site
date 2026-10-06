@@ -1,7 +1,7 @@
 /* SubSyncAI install guide - page-specific styles (on top of site.css). */
 body.guide .nav{height:116px}
 body.guide img.mark{width:84px;height:84px;border-radius:22px}
-body.guide .brand{font-size:28px}
+body.guide img.mark.logo-full{width:auto;height:104px;border-radius:18px}
 body.guide .links a:not(.btn){display:inline}
 
 .g-hero{padding:36px 0 18px}
@@ -85,8 +85,7 @@ figure.shot figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-he
   .g-layout{grid-template-columns:1fr;gap:22px}
   .toc{position:static}
   body.guide .nav{height:96px}
-  body.guide img.mark{width:64px;height:64px;border-radius:17px}
-  body.guide .brand{font-size:22px}
+  body.guide img.mark.logo-full{width:auto;height:72px;border-radius:14px}
   body.guide .links a:not(.btn){display:none}
 }
 @media(max-width:520px){
