@@ -96,3 +96,4 @@ figure.shot figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-he
   .copybtn{padding:11px 18px}
 }
 @media print{.toc,.progress,.cursor-glow,.langsel,.copybtn{display:none}}
+.support-line{margin:0 0 22px!important;font-size:16px}.support-line a{color:var(--cyan);font-weight:800;text-decoration:underline;text-underline-offset:3px}
