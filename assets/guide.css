@@ -1,0 +1,99 @@
+/* SubSyncAI install guide - page-specific styles (on top of site.css). */
+body.guide .nav{height:116px}
+body.guide img.mark{width:84px;height:84px;border-radius:22px}
+body.guide .brand{font-size:28px}
+body.guide .links a:not(.btn){display:inline}
+
+.g-hero{padding:36px 0 18px}
+.g-hero>*{max-width:900px}
+.g-hero h1{font-size:clamp(36px,5vw,60px);letter-spacing:-2px;margin:14px 0 16px}
+.g-hero .lead{max-width:720px}
+
+.g-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:48px;align-items:start;padding-bottom:70px}
+.toc{position:sticky;top:20px;border:1px solid var(--line);background:#0e162899;border-radius:16px;padding:18px 18px 12px}
+.toc-h{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--cyan);font-weight:800;margin-bottom:10px}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li a{display:block;padding:8px 10px;margin:0 -10px;border-radius:9px;font-size:14px;color:#cdd8ec;line-height:1.35}
+.toc li a:hover{background:#ffffff0d;color:#fff}
+
+.g-body{min-width:0}
+.g-sec{margin:0 0 54px;scroll-margin-top:24px}
+.g-sec>h2{font-size:clamp(26px,3.4vw,36px);letter-spacing:-1px;margin:0 0 22px;line-height:1.1}
+.g-intro{color:var(--muted);line-height:1.65;margin:-6px 0 22px;max-width:760px}
+.g-sub{margin:34px 0 0}
+.g-h3{font-size:22px;margin:0 0 12px;letter-spacing:-.4px}
+.g-h3.browser{display:flex;align-items:center;gap:12px}
+.bdot{width:14px;height:14px;border-radius:50%;display:inline-block}
+.bdot.chrome{background:conic-gradient(#ea4335 0 33%,#fbbc05 0 66%,#34a853 0)}
+.bdot.edge{background:linear-gradient(135deg,#3dd9a0,#1f7ed6)}
+
+.g-body p{line-height:1.7;color:#c9d4e8;margin:0 0 14px}
+.g-body b{color:#fff}
+.g-body i{color:#bff7ff;font-style:normal;background:#55e6ff12;border-radius:6px;padding:1px 6px}
+
+code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.9em;background:#0a1222;border:1px solid var(--line);border-radius:8px;padding:2px 8px;color:#bff7ff;overflow-wrap:anywhere}
+kbd{font-family:inherit;font-size:.85em;font-weight:700;background:#16233c;border:1px solid #2a3d61;border-bottom-width:3px;border-radius:7px;padding:1px 8px;color:#fff;white-space:nowrap}
+
+.copyrow{display:flex;align-items:stretch;gap:10px;margin:6px 0 18px;max-width:640px}
+.copyrow code{flex:1;display:flex;align-items:center;padding:11px 14px;font-size:14px;border-radius:12px;min-width:0}
+.copybtn{flex:none;cursor:pointer;font:inherit;font-weight:800;font-size:14px;color:var(--text);background:#ffffff0a;border:1px solid #ffffff24;border-radius:12px;padding:0 18px;transition:border-color .2s,background .2s}
+.copybtn:hover{border-color:#55e6ff77;background:#55e6ff14}
+.copybtn.ok{background:#5af0a51f;border-color:var(--green);color:#b9ffd9}
+
+.gsteps{list-style:none;margin:0;padding:0;counter-reset:gs}
+.gsteps>li{counter-increment:gs;position:relative;padding:0 0 26px 62px;border-left:0}
+.gsteps>li:before{content:counter(gs);position:absolute;left:0;top:-2px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:18px;color:#07101c;background:linear-gradient(135deg,var(--cyan),var(--violet));box-shadow:0 0 22px #55e6ff33}
+.gsteps>li:after{content:"";position:absolute;left:20px;top:46px;bottom:6px;width:2px;background:linear-gradient(#55e6ff55,transparent)}
+.gsteps>li:last-child:after{display:none}
+.gsteps h3{font-size:19px;margin:2px 0 8px;letter-spacing:-.3px}
+.gsteps li>p{margin:0 0 12px}
+
+.checks{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:10px}
+.checks li{position:relative;padding:12px 16px 12px 46px;border:1px solid var(--line);border-radius:14px;background:#0e162880;line-height:1.55;color:#c9d4e8}
+.checks li:before{content:"✓";position:absolute;left:15px;top:11px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#5af0a526;color:var(--green);font-weight:900;font-size:13px}
+
+.callout{border-radius:16px;padding:16px 20px;margin:14px 0 20px;border:1px solid var(--line);background:#0e1628}
+.callout h4{margin:0 0 8px;font-size:16px;color:#fff}
+.callout p{margin:0 0 10px}
+.callout p:last-child{margin-bottom:0}
+.callout.info{border-color:#55e6ff44;background:linear-gradient(150deg,#55e6ff10,#0e1628 60%)}
+.callout.warn{border-color:#ffb95c55;background:linear-gradient(150deg,#ffb95c12,#0e1628 60%)}
+.callout.warn h4{color:#ffd8a1}
+.callout ul{margin:6px 0 0;padding-left:20px;display:grid;gap:10px;color:#c9d4e8;line-height:1.65}
+
+figure.shot{margin:18px 0 26px;max-width:640px}
+figure.shot img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid #2a3d61;box-shadow:var(--shadow)}
+figure.shot figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.5}
+.fig-note{font-size:13.5px;color:#9fb0cc!important}
+
+.keep{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.keep li{padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:#0e162880;line-height:1.65;color:#c9d4e8}
+
+.faq{border:1px solid var(--line);border-radius:14px;background:#0e162880;margin:0 0 12px;transition:border-color .2s}
+.faq[open]{border-color:#55e6ff55}
+.faq summary{cursor:pointer;list-style:none;padding:16px 52px 16px 20px;font-weight:800;position:relative;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;color:var(--cyan);transition:transform .2s}
+.faq[open] summary:after{content:"–"}
+.faq-a{padding:0 20px 18px;line-height:1.7;color:#c9d4e8}
+
+.g-end{text-align:center;border:1px solid var(--line);border-radius:22px;padding:42px 24px;background:radial-gradient(circle at 50% 0,#55e6ff14,transparent 60%),#0e1628}
+.g-end h2{margin:0 0 12px;font-size:clamp(26px,3.4vw,36px);letter-spacing:-1px}
+.g-end p{max-width:620px;margin:0 auto 22px}
+
+@media(max-width:900px){
+  .g-layout{grid-template-columns:1fr;gap:22px}
+  .toc{position:static}
+  body.guide .nav{height:96px}
+  body.guide img.mark{width:64px;height:64px;border-radius:17px}
+  body.guide .brand{font-size:22px}
+  body.guide .links a:not(.btn){display:none}
+}
+@media(max-width:520px){
+  .gsteps>li{padding-left:52px}
+  .gsteps>li:before{width:36px;height:36px;font-size:16px}
+  .gsteps>li:after{left:17px;top:40px}
+  .copyrow{flex-direction:column}
+  .copybtn{padding:11px 18px}
+}
+@media print{.toc,.progress,.cursor-glow,.langsel,.copybtn{display:none}}
