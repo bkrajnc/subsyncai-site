@@ -71,3 +71,31 @@ since GitHub Pages already serves valid HTTPS.
 
 Any push to `main` redeploys automatically within about a minute - no
 separate build or deploy command needed.
+
+## Releasing a new installer
+
+The download button points to `https://download.subsyncai.app/SubSyncAI-Setup.exe`
+(Cloudflare R2). The site shows the file's SHA-256 so visitors can verify it, and
+`checksums.txt` repeats it. Every new installer therefore needs the same hash in
+three places.
+
+1. **Build the installer** with Inno Setup from `netflix-subtitle-translator/installer/subsyncai.iss`
+   (that copy has the `Excludes` that keep `.env`, `settings.json`, `venv`, logs and caches out
+   of the package; make sure you do not compile an older copy of the script). The result is
+   `SubSyncAI-Setup.exe`.
+2. **Upload it** to the R2 bucket `subsyncai-downloads`, replacing `SubSyncAI-Setup.exe`
+   (same object name, so the URL does not change).
+3. **Recompute the SHA-256** of the file you uploaded, lowercase hex:
+
+   ```powershell
+   (Get-FileHash -Algorithm SHA256 -LiteralPath .\SubSyncAI-Setup.exe).Hash.ToLower()
+   ```
+
+   Optionally confirm that the served file is identical:
+   `curl.exe -L -o $env:TEMP\check.exe https://download.subsyncai.app/SubSyncAI-Setup.exe`
+   and hash that file too.
+4. **Update the hash** in `index.html` (`<code id="sha256">`) and in `checksums.txt`
+   (and, if they changed, the size / version in the `dl_file` line of `index.html` and in the
+   `dl_file` entry of `assets/i18n-index.js`)
+   Format of `checksums.txt`: `<hash>  SubSyncAI-Setup.exe` (two spaces).
+5. **Publish**: `git add -A`, `git commit`, `git push`.

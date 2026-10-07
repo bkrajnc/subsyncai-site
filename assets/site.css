@@ -29,3 +29,9 @@ dialog.pop .btn:not(.primary){margin-top:10px}
 .pop-x{position:absolute;right:14px;top:10px;width:36px;height:36px;border-radius:50%;border:0;background:#ffffff0f;color:#cdd8ec;font-size:24px;line-height:1;cursor:pointer}
 .pop-x:hover{background:#ffffff1f;color:#fff}
 dialog.pop button.btn{color:var(--text);font:inherit;font-weight:800;cursor:pointer}
+.dlinfo{max-width:760px;margin:6px auto 0}
+.dlinfo .micro{margin-top:9px;line-height:1.6}
+.dlinfo b{color:#c3cfe4}
+.dlinfo code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:12px;background:#0a1222;border:1px solid var(--line);border-radius:8px;padding:2px 8px;color:#bff7ff;word-break:break-all;overflow-wrap:anywhere}
+@media(max-width:520px){.nav{height:112px}img.mark.logo-full{height:68px;border-radius:14px}.links{gap:8px}.langsel{padding:9px 28px 9px 11px;font-size:13px;background-position:right 9px center}.links .btn{padding:10px 13px;font-size:13px}}
+@media(max-width:520px){.logo-row{flex-wrap:wrap;gap:8px 10px}}
