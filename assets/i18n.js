@@ -18,6 +18,9 @@
       var e = DICT[el.getAttribute("data-i18n")];
       if (e && e[lang]) el.innerHTML = e[lang];
     });
+    document.querySelectorAll("img[data-src-sl]").forEach(function (el) {
+      el.setAttribute("src", lang === "sl" ? el.getAttribute("data-src-sl") : el.getAttribute("data-src-en"));
+    });
     document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
       var e = DICT[el.getAttribute("data-i18n-alt")];
       if (e && e[lang]) el.setAttribute("alt", plain(e[lang]));
