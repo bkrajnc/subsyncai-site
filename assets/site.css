@@ -36,3 +36,4 @@ dialog.pop button.btn{color:var(--text);font:inherit;font-weight:800;cursor:poin
 @media(max-width:520px){.nav{height:112px}img.mark.logo-full{height:68px;border-radius:14px}.links{gap:8px}.langsel{padding:9px 28px 9px 11px;font-size:13px;background-position:right 9px center}.links .btn{padding:10px 13px;font-size:13px}}
 @media(max-width:520px){.logo-row{flex-wrap:wrap;gap:8px 10px}}
 .note.vat{font-size:15px;color:#c3cfe4;text-align:center;margin:26px auto 0}.note.vat b{color:#fff}.note.vat+.note{margin-top:14px}
+.screen .heroimg{display:block;width:100%;height:auto;border-radius:14px;aspect-ratio:1400/781;object-fit:cover}
