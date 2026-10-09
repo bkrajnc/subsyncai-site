@@ -1,0 +1,128 @@
+SubSync AI - Third-party notices
+Last updated: October 9, 2026
+
+SubSync AI is proprietary software of Net-Prom, Boris Krajnc s.p. (see LICENSE.txt). It
+uses the open-source and third-party components listed below. Each component is licensed
+to you under ITS OWN license, which stays unchanged; the SubSync AI License Agreement
+does not restrict the rights those licenses give you for those components, and does not
+apply to them.
+
+1. WHAT IS LISTED HERE
+
+SubSync AI does not ship these components inside its installer. The setup program
+installs them on your computer from their official sources (python.org for Python, the
+Python Package Index PyPI for the packages), into a private folder of the app
+(backend\venv). The license text of every package is installed together with it, in
+backend\venv\Lib\site-packages\<package>-<version>.dist-info\ (LICENSE / licenses
+folder). Versions below are the ones tested in October 2026; newer compatible versions
+may be installed.
+
+2. PYTHON
+
+Python (python.org) - Python Software Foundation License (PSF-2.0). Downloaded and
+installed by the setup program only if it is not already on your computer.
+https://docs.python.org/3/license.html
+
+3. PACKAGES REQUIRED BY SUBSYNC AI (direct dependencies)
+
+  argostranslate     1.10.0       MIT
+  fastapi            0.141.1      MIT
+  python-dotenv      1.2.3        BSD-3-Clause
+  requests           2.34.2       Apache-2.0
+  uvicorn            0.53.0       BSD-3-Clause
+
+4. OTHER PACKAGES INSTALLED AS DEPENDENCIES
+
+  annotated-doc          0.0.5        MIT
+  annotated-types        0.8.0        MIT
+  anyio                  4.15.1       MIT
+  blis                   1.3.3        BSD-3-Clause
+  catalogue              2.0.10       MIT
+  certifi                2026.7.22    MPL-2.0
+  charset-normalizer     3.5.1        MIT
+  click                  8.5.0        BSD-3-Clause
+  cloudpathlib           0.26.0       MIT
+  cloudpickle            3.1.2        BSD-3-Clause
+  colorama               0.4.6        BSD-3-Clause
+  confection             1.3.3        MIT
+  ctranslate2            4.8.2        MIT
+  cymem                  2.0.13       MIT
+  emoji                  2.16.0       BSD-3-Clause
+  filelock               4.0.12       MIT
+  flatbuffers            25.12.19     Apache-2.0
+  fsspec                 2026.9.0     BSD-3-Clause
+  h11                    0.16.0       MIT
+  httpcore               1.0.9        BSD-3-Clause
+  httpx                  0.28.1       BSD-3-Clause
+  idna                   3.20         BSD-3-Clause
+  Jinja2                 3.1.6        BSD-3-Clause
+  joblib                 1.6.0        BSD-3-Clause
+  markdown-it-py         4.2.0        MIT
+  MarkupSafe             3.0.4        BSD-3-Clause
+  mdurl                  0.1.2        MIT
+  mpmath                 1.3.0        BSD-3-Clause
+  murmurhash             1.0.15       MIT
+  networkx               3.7          BSD-3-Clause
+  numpy                  2.5.3        BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0
+  onnxruntime            1.30.0       MIT
+  packaging              26.3         Apache-2.0 OR BSD-2-Clause
+  pip                    26.2.1       MIT
+  preshed                3.0.13       MIT
+  protobuf               7.36.2       BSD-3-Clause
+  pydantic               2.13.5       MIT
+  pydantic_core          2.46.5       MIT
+  Pygments               2.21.0       BSD-2-Clause
+  PyYAML                 6.0.3        MIT
+  regex                  2026.9.29    Apache-2.0 AND CNRI-Python
+  rich                   15.0.0       MIT
+  sacremoses             0.1.1        MIT
+  sentencepiece          0.2.2        Apache-2.0
+  setuptools             84.0.0       MIT
+  shellingham            1.5.4        ISC
+  smart_open             8.0.2        MIT
+  spacy                  3.8.16       MIT
+  spacy-legacy           3.0.12       MIT
+  spacy-loggers          1.0.5        MIT
+  srsly                  2.5.4        MIT
+  stanza                 1.10.1       Apache-2.0
+  starlette              1.6.0        BSD-3-Clause
+  sympy                  1.14.0       BSD-3-Clause
+  thinc                  8.3.13       MIT
+  torch                  2.14.1       BSD-3-Clause (BSD-style, PyTorch)
+  tqdm                   4.70.1       MPL-2.0 AND MIT
+  typer                  0.27.2       MIT
+  typing-inspection      0.4.4        MIT
+  typing_extensions      4.16.0       PSF-2.0
+  urllib3                2.8.0        MIT
+  wasabi                 1.1.3        MIT
+  weasel                 1.0.0        MIT
+  wrapt                  2.5.0        BSD-2-Clause
+
+Where to find each package: https://pypi.org/project/<package name>/
+
+Note: certifi, tqdm are available under the Mozilla Public License 2.0 (file-level
+copyleft). They are used unmodified; their source code is available from the projects'
+repositories and from PyPI.
+
+5. LANGUAGE PACKAGES FOR THE OPTIONAL LOCAL TRANSLATOR
+
+The optional local translator uses Argos Translate (MIT license, Argos Open
+Technologies, LLC; https://github.com/argosopentech/argos-translate), CTranslate2 (MIT)
+and SentencePiece (Apache-2.0). The translation models (language packages) are NOT part
+of SubSync AI and are not contained in the installer. You download them yourself, once,
+when you click 'Download language packages' in the app; they come from third-party
+servers (GitHub and the Argos Translate project) and are provided by their authors under
+their own licenses and terms, which you can find with the packages and in the Argos
+Translate project. Any use of the models is subject to those terms.
+
+6. BROWSER EXTENSION
+
+The SubSync AI browser extension contains no third-party libraries.
+
+7. TRADEMARKS
+
+Netflix, HBO Max, Chrome, Edge, Windows, Python and all other product names are
+trademarks of their respective owners. SubSync AI is not affiliated with or endorsed by
+them.
+
+Questions or requests for license texts: support@subsyncai.app

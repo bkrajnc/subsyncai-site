@@ -35,3 +35,4 @@ dialog.pop button.btn{color:var(--text);font:inherit;font-weight:800;cursor:poin
 .dlinfo code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:12px;background:#0a1222;border:1px solid var(--line);border-radius:8px;padding:2px 8px;color:#bff7ff;word-break:break-all;overflow-wrap:anywhere}
 @media(max-width:520px){.nav{height:112px}img.mark.logo-full{height:68px;border-radius:14px}.links{gap:8px}.langsel{padding:9px 28px 9px 11px;font-size:13px;background-position:right 9px center}.links .btn{padding:10px 13px;font-size:13px}}
 @media(max-width:520px){.logo-row{flex-wrap:wrap;gap:8px 10px}}
+.note.vat{font-size:15px;color:#c3cfe4;text-align:center;margin:26px auto 0}.note.vat b{color:#fff}.note.vat+.note{margin-top:14px}
