@@ -37,3 +37,5 @@ dialog.pop button.btn{color:var(--text);font:inherit;font-weight:800;cursor:poin
 @media(max-width:520px){.logo-row{flex-wrap:wrap;gap:8px 10px}}
 .note.vat{font-size:15px;color:#c3cfe4;text-align:center;margin:26px auto 0}.note.vat b{color:#fff}.note.vat+.note{margin-top:14px}
 .screen .heroimg{display:block;width:100%;height:auto;border-radius:14px;aspect-ratio:1400/781;object-fit:cover}
+.f2{left:auto;right:-22px;bottom:26px}
+@media(min-width:851px){.hero>div:first-child{position:relative;z-index:2}.screen{z-index:1;margin-left:-140px}.screen::after{content:"";position:absolute;inset:12px;border-radius:14px;pointer-events:none;background:linear-gradient(90deg,#070b14d9 0,#070b1488 16%,#070b1400 42%)}}
