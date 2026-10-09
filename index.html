@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="https://subsyncai.app/">
 <title>SubSyncAI — Subtitles in your language. Instantly.</title>
 <meta name="description" content="SubSyncAI translates subtitles while you watch in your browser. Local translator, 50 languages, optional AI providers, Chrome and Edge.">
 <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png"><meta property="og:type" content="website"><meta property="og:title" content="SubSyncAI — Subtitles in your language. Instantly."><meta property="og:image" content="https://subsyncai.app/images/og-image.png"><meta name="twitter:card" content="summary_large_image">
@@ -28,4 +28,4 @@ const screen=document.querySelector('.screen');
 if(matchMedia('(pointer:fine)').matches){screen.addEventListener('pointermove',e=>{const r=screen.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;screen.style.animation='none';screen.style.transform=`perspective(1000px) rotateY(${x*7-2}deg) rotateX(${-y*5+1}deg) translateY(-4px)`});screen.addEventListener('pointerleave',()=>{screen.style.transform='';screen.style.animation=''})}
 </script>
 <script src="assets/i18n-index.js"></script>
-<script src="assets/i18n.js"></script></body></html>
+<script src="assets/i18n.js"></script><script src="assets/analytics.js" defer></script></body></html>
