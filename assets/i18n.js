@@ -1,4 +1,4 @@
-/* SubSyncAI site - language switcher. English is the default; the choice is remembered.
+/* SubSyncAI site - language switcher. Order: ?lang=, remembered choice, system language, English.
    Each page defines window.SUBSYNC_PAGE = {dict: {key: {lang: html}}, head: {title: {...}, desc: {...}}} first. */
 (function () {
   var LANGS = [["en", "English"], ["sl", "Slovenščina"], ["de", "Deutsch"], ["es", "Español"], ["hr", "Hrvatski"], ["it", "Italiano"], ["fr", "Français"]];
@@ -8,6 +8,16 @@
   function has(l) { return LANGS.some(function (x) { return x[0] === l; }); }
   function stored() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }
   function remember(l) { try { localStorage.setItem("lang", l); } catch (e) {} }
+  /* the visitor's system/browser language (first supported one in the preference list), else English */
+  function system() {
+    var list = [];
+    try { list = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language]) || []; } catch (e) {}
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i] || "").slice(0, 2).toLowerCase();
+      if (has(c)) return c;
+    }
+    return DEFAULT;
+  }
   function plain(html) { var d = document.createElement("div"); d.innerHTML = html; return d.textContent; }
   window.subsyncT = function (key) { var e = DICT[key]; return e && (e[current] || e[DEFAULT]) ? plain(e[current] || e[DEFAULT]) : ""; };
   function apply(lang) {
@@ -37,7 +47,7 @@
   }
   function init() {
     var q = new URLSearchParams(location.search).get("lang");
-    var start = has(q) ? q : (has(stored()) ? stored() : DEFAULT);
+    var start = has(q) ? q : (has(stored()) ? stored() : system());
     var sel = document.getElementById("lang");
     if (sel) {
       sel.innerHTML = LANGS.map(function (x) { return '<option value="' + x[0] + '">' + x[1] + "</option>"; }).join("");
