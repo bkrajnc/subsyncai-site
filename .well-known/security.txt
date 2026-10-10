@@ -1,0 +1,4 @@
+Contact: mailto:support@subsyncai.app
+Expires: 2027-10-09T00:00:00.000Z
+Preferred-Languages: en, sl
+Canonical: https://subsyncai.app/.well-known/security.txt

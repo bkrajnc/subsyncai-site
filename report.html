@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="https://subsyncai.app/report.html">
+<title>Report a problem – SubSyncAI</title>
+<meta name="description" content="Send a problem report to SubSyncAI support, with an optional screenshot.">
+<link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:title" content="Report a problem – SubSyncAI"><meta property="og:image" content="https://subsyncai.app/images/og-image.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/guide.css">
+</head>
+<body class="guide">
+<div class="wrap"><nav class="nav"><a class="brand" href="index.html"><img class="mark logo-full" src="images/logo-nav.png" width="225" height="150" alt="SubSyncAI – AI subtitles. Any language."></a><div class="links"><a href="index.html" data-i18n="nav_home">Home</a><select id="lang" class="langsel" aria-label="Language"><option value="en">English</option></select><a class="btn" href="index.html#download" data-i18n="nav_download">Download</a></div></nav></div>
+<main>
+<header class="wrap g-hero"><div class="eyebrow" data-i18n="r_eyebrow">Support</div><h1 data-i18n="r_h1">Report a problem</h1><p class="lead" data-i18n="r_lead">Something does not work? Tell us what happened and add a screenshot if you can. We reply by e-mail.</p><p class="rp-guide"><a href="install.html#tr" data-i18n="r_guide">Check the troubleshooting section of the install guide first →</a></p></header>
+<div class="wrap rp-wrap">
+<form id="rp" class="rp" method="post" action="/api/report" enctype="multipart/form-data" novalidate>
+<div class="rp-grid">
+<div class="rp-f"><label for="rp-cat" data-i18n="f_cat">What is the problem about?</label><select id="rp-cat" name="category" required><option value="install" data-i18n="cat_install">Installation or first setup</option><option value="license" data-i18n="cat_license">License or purchase</option><option value="translation" data-i18n="cat_translation">Translation or subtitles</option><option value="extension" data-i18n="cat_extension">Browser extension</option><option value="download" data-i18n="cat_download">Download or antivirus</option><option value="other" data-i18n="cat_other">Something else</option></select></div>
+<div class="rp-f"><label for="rp-name" data-i18n="f_name">Your name (optional)</label><input id="rp-name" name="name" type="text" maxlength="100" autocomplete="name"></div>
+<div class="rp-f"><label for="rp-email" data-i18n="f_email">Your e-mail address</label><input id="rp-email" name="email" type="email" maxlength="254" autocomplete="email" required aria-describedby="rp-email-h"><div class="rp-h" id="rp-email-h" data-i18n="f_email_hint">Used only to reply to your report.</div></div>
+<div class="rp-f"><label for="rp-ver" data-i18n="f_version">App version (optional)</label><input id="rp-ver" name="version" type="text" maxlength="40" placeholder="5.2" autocomplete="off"></div>
+<div class="rp-f rp-wide"><label for="rp-os" data-i18n="f_os">Windows and browser (optional)</label><input id="rp-os" name="os" type="text" maxlength="200" placeholder="Windows 11, Chrome 130" autocomplete="off"></div>
+<div class="rp-f rp-wide"><label for="rp-msg" data-i18n="f_msg">What happened?</label><textarea id="rp-msg" name="message" rows="7" maxlength="5000" required></textarea></div>
+<div class="rp-f rp-wide"><span class="rp-lab" id="rp-shot-l" data-i18n="f_shot">Screenshot (optional)</span>
+<div id="rp-drop" class="rp-drop" tabindex="0" role="button" aria-labelledby="rp-shot-l"><span data-i18n="f_shot_drop"><b>Click to choose</b>, drop images here, or paste with <b>Ctrl+V</b></span></div>
+<input id="rp-file" type="file" accept="image/png,image/jpeg,image/webp,image/gif" multiple hidden>
+<ul id="rp-thumbs" class="rp-thumbs"></ul><div class="rp-h" data-i18n="f_shot_hint">Up to 3 images (PNG, JPG, WebP, GIF). Large images are shrunk automatically. Make sure no license key or other private data is visible on them.</div></div>
+</div>
+<div class="rp-hp" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+<label class="rp-chk"><input id="rp-tech" type="checkbox" checked><span data-i18n="f_tech">Attach technical information (browser and system, no personal data)</span></label>
+<label class="rp-chk"><input id="rp-consent" type="checkbox" required><span data-i18n="f_consent">I agree that SubSyncAI uses the data I entered here to answer my report. See the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>
+<div id="rp-msgbox" class="rp-status" role="status" aria-live="polite" hidden></div>
+<button id="rp-send" class="btn primary rp-send" type="submit" data-i18n="f_send">Send report</button>
+</form>
+</div>
+</main>
+<footer class="footer"><div class="wrap"><div><img src="images/logo-nav.png" width="120" height="80" alt="SubSyncAI" style="vertical-align:middle;border-radius:14px;margin-right:14px"><span data-i18n="foot_tag">Subtitles without language borders.</span></div><div data-i18n="foot_copy">© 2026 SubSyncAI · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of Service</a> · <a href="refund.html">Refund Policy</a> · <a href="license.html">License Agreement</a> · <a href="mailto:support@subsyncai.app">Support</a></div></div></footer>
+<script src="assets/i18n-report.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/report.js" defer></script>
+<script src="assets/analytics.js" defer></script></body></html>
