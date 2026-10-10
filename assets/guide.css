@@ -101,3 +101,5 @@ figure.shot figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-he
 .wizgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:18px}
 .wizgrid figure.shot{margin:0;max-width:none}
 @media(max-width:700px){.wizgrid{grid-template-columns:1fr}}
+
+.faq-a a{color:#55e6ff;text-decoration:underline;font-weight:600}

@@ -16,12 +16,12 @@
   var KEY = "subsync_analytics_consent";
   var T = {
     en: { t: "We use Google Analytics to understand how this website is used. It sets cookies only if you accept. Without your consent nothing is loaded.", a: "Accept", r: "Reject", p: "Privacy Policy", s: "Cookie settings" },
-    sl: { t: "Za razumevanje uporabe te spletne strani uporabljamo Google Analytics. Piškotke nastavi samo, če sprejmete. Brez vašega soglasja se ne naloži nič.", a: "Sprejmem", r: "Zavrnem", p: "Politika zasebnosti", s: "Nastavitve piškotkov" },
-    de: { t: "Wir verwenden Google Analytics, um zu verstehen, wie diese Website genutzt wird. Cookies werden nur gesetzt, wenn Sie zustimmen. Ohne Ihre Einwilligung wird nichts geladen.", a: "Akzeptieren", r: "Ablehnen", p: "Datenschutzerklärung", s: "Cookie-Einstellungen" },
-    es: { t: "Usamos Google Analytics para entender cómo se usa este sitio web. Solo se instalan cookies si aceptas. Sin tu consentimiento no se carga nada.", a: "Aceptar", r: "Rechazar", p: "Política de privacidad", s: "Configuración de cookies" },
-    hr: { t: "Koristimo Google Analytics kako bismo razumjeli kako se ova web-stranica koristi. Kolačići se postavljaju samo ako prihvatite. Bez vaše privole ne učitava se ništa.", a: "Prihvaćam", r: "Odbijam", p: "Pravila privatnosti", s: "Postavke kolačića" },
+    sl: { t: "Za razumevanje uporabe te spletne strani uporabljamo Google Analytics. Pi\u0161kotke nastavi samo, \u010de sprejmete. Brez va\u0161ega soglasja se ne nalo\u017ei ni\u010d.", a: "Sprejmem", r: "Zavrnem", p: "Politika zasebnosti", s: "Nastavitve pi\u0161kotkov" },
+    de: { t: "Wir verwenden Google Analytics, um zu verstehen, wie diese Website genutzt wird. Cookies werden nur gesetzt, wenn Sie zustimmen. Ohne Ihre Einwilligung wird nichts geladen.", a: "Akzeptieren", r: "Ablehnen", p: "Datenschutzerkl\u00e4rung", s: "Cookie-Einstellungen" },
+    es: { t: "Usamos Google Analytics para entender c\u00f3mo se usa este sitio web. Solo se instalan cookies si aceptas. Sin tu consentimiento no se carga nada.", a: "Aceptar", r: "Rechazar", p: "Pol\u00edtica de privacidad", s: "Configuraci\u00f3n de cookies" },
+    hr: { t: "Koristimo Google Analytics kako bismo razumjeli kako se ova web-stranica koristi. Kola\u010di\u0107i se postavljaju samo ako prihvatite. Bez va\u0161e privole ne u\u010ditava se ni\u0161ta.", a: "Prihva\u0107am", r: "Odbijam", p: "Pravila privatnosti", s: "Postavke kola\u010di\u0107a" },
     it: { t: "Usiamo Google Analytics per capire come viene utilizzato questo sito. I cookie vengono impostati solo se accetti. Senza il tuo consenso non viene caricato nulla.", a: "Accetta", r: "Rifiuta", p: "Informativa sulla privacy", s: "Impostazioni cookie" },
-    fr: { t: "Nous utilisons Google Analytics pour comprendre comment ce site est utilisé. Des cookies ne sont déposés que si vous acceptez. Sans votre consentement, rien n’est chargé.", a: "Accepter", r: "Refuser", p: "Politique de confidentialité", s: "Paramètres des cookies" }
+    fr: { t: "Nous utilisons Google Analytics pour comprendre comment ce site est utilis\u00e9. Des cookies ne sont d\u00e9pos\u00e9s que si vous acceptez. Sans votre consentement, rien n\u2019est charg\u00e9.", a: "Accepter", r: "Refuser", p: "Politique de confidentialit\u00e9", s: "Param\u00e8tres des cookies" }
   };
 
   function lang() {
