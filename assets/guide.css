@@ -164,3 +164,5 @@ figure.shot figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-he
 .rp-send{margin-top:22px;border:0;cursor:pointer;font-size:16px}
 .rp-send[disabled]{opacity:.6;cursor:wait}
 @media(max-width:700px){.rp{padding:20px 16px 22px}.rp-grid{grid-template-columns:1fr}}
+
+.g-video{margin-top:8px;margin-bottom:8px}.g-video video{display:block;width:100%;max-width:960px;margin:0 auto;aspect-ratio:16/9;background:#000;border-radius:14px;border:1px solid rgba(128,128,128,.3)}
