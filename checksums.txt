@@ -1,1 +1,1 @@
-4daefe4e30d33026156c67d1c5d8d305b62dbe83f1717f2a237ec14002d9ae37  SubSyncAI-Setup.exe
+21af43edd89eee24f5febfe291321b1f9d1946ffd529327c6edd24cbf77b65e9  SubSyncAI-Setup.exe
