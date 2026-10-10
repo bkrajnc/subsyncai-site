@@ -14,6 +14,7 @@
 <header class="wrap g-hero"><div class="eyebrow" data-i18n="r_eyebrow">Support</div><h1 data-i18n="r_h1">Report a problem</h1><p class="lead" data-i18n="r_lead">Something does not work? Tell us what happened and add a screenshot if you can. We reply by e-mail.</p><p class="rp-guide"><a href="install.html#tr" data-i18n="r_guide">Check the troubleshooting section of the install guide first →</a></p></header>
 <div class="wrap rp-wrap">
 <form id="rp" class="rp" method="post" action="/api/report" enctype="multipart/form-data" novalidate>
+<noscript><p class="rp-status err">JavaScript is required for this form. Please write to <a href="mailto:support@subsyncai.app">support@subsyncai.app</a>.</p></noscript>
 <div class="rp-grid">
 <div class="rp-f"><label for="rp-cat" data-i18n="f_cat">What is the problem about?</label><select id="rp-cat" name="category" required><option value="install" data-i18n="cat_install">Installation or first setup</option><option value="license" data-i18n="cat_license">License or purchase</option><option value="translation" data-i18n="cat_translation">Translation or subtitles</option><option value="extension" data-i18n="cat_extension">Browser extension</option><option value="download" data-i18n="cat_download">Download or antivirus</option><option value="other" data-i18n="cat_other">Something else</option></select></div>
 <div class="rp-f"><label for="rp-name" data-i18n="f_name">Your name (optional)</label><input id="rp-name" name="name" type="text" maxlength="100" autocomplete="name"></div>

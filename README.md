@@ -99,3 +99,19 @@ three places.
    `dl_file` entry of `assets/i18n-index.js`)
    Format of `checksums.txt`: `<hash>  SubSyncAI-Setup.exe` (two spaces).
 5. **Publish**: `git add -A`, `git commit`, `git push`.
+
+## Problem report form (report.html) - Cloudflare setup
+
+`report.html` posts to `/api/report`, handled by `worker/index.js` (a Cloudflare Worker that serves
+the static files too). It e-mails the report (with optional screenshots) with Cloudflare Email Workers.
+
+1. Cloudflare dashboard -> Email -> **Email Routing** must be enabled for subsyncai.app (it is).
+2. The `SUPPORT_TO` variable in `wrangler.jsonc` must be an address that is a **verified destination
+   address** in Email Routing (the real mailbox that support@subsyncai.app forwards to, if sending
+   directly to support@ is refused). `MAIL_FROM` must be an address on subsyncai.app.
+3. Optional but recommended: Turnstile (add the secret as `TURNSTILE_SECRET`) and a Cloudflare
+   rate-limiting rule for `/api/report`. A rate-limit binding `REPORT_RL` is used if present.
+4. Files that must NOT be public are listed in `.assetsignore` (the `worker/` folder, `.git`, ...).
+5. Security headers (CSP, HSTS, ...) are in `_headers`. After adding a new external script or
+   style source, add its host to the Content-Security-Policy there.
+
