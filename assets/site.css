@@ -40,4 +40,4 @@ dialog.pop button.btn{color:var(--text);font:inherit;font-weight:800;cursor:poin
 .f2{left:auto;right:-22px;bottom:26px}
 @media(min-width:851px){.hero>div:first-child{position:relative;z-index:2}.screen{z-index:1;margin-left:-140px}.screen::after{content:"";position:absolute;inset:12px;border-radius:14px;pointer-events:none;background:linear-gradient(90deg,#070b14d9 0,#070b1488 16%,#070b1400 42%)}}
 
-.platforms{max-width:650px;margin:18px 0 0;padding:14px 16px;border-left:3px solid var(--cyan);background:#55e6ff0d;border-radius:0 12px 12px 0;color:#d6deed;font-size:16px;line-height:1.6}.platforms b{color:var(--text)}
+.freebar.platforms{margin:0 0 14px;border-color:#55e6ff66;background:linear-gradient(135deg,#55e6ff1f,#9a72ff0d);box-shadow:0 0 34px #55e6ff1a;color:#e3f8ff}.freebar.platforms b{color:var(--cyan)}.freebar.platforms .freeicon{background:var(--cyan);color:#06222b;font-size:11px;padding-left:2px}
