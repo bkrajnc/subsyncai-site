@@ -74,7 +74,10 @@
     if (href.indexOf("download.subsyncai.app") !== -1) {
       window.gtag("event", "download_click", { file_name: href.split("/").pop().split("?")[0], page_path: location.pathname });
     } else if (href.indexOf("lemonsqueezy.com") !== -1) {
-      window.gtag("event", "buy_click", { page_path: location.pathname });
+      /* fires only after analytics consent (this listener is registered in loadGA) */
+      var plan = a.getAttribute("data-plan") || "unknown";
+      window.gtag("event", "buy_click", { page_path: location.pathname, plan: plan, trial_days: 14,
+        value: plan === "yearly" ? 29 : (plan === "monthly" ? 2.9 : undefined), currency: "EUR" });
     }
   }
 
